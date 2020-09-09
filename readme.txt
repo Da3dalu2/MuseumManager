@@ -1,0 +1,10 @@
+L'applicazione consiste in una serie di tab che permettono di effettuare l'inserimento o la
+visualizzazione di ciò che è memorizzato nella base dati locale.
+
+Nel tab Archivista è possibile effettuare l'inserimento di un'opera.
+
+Nel tab Archivio è possibile visualizzare e aggiornare i dati relativi alle collezioni
+del museo, alle mostre, alle opere, agli scavi e alla cronologia delle opere in archivio.
+
+Nel tab Restauratore è possibile visualizzare i dati relativi ai restauri effettuati e
+agli interventi a cui è stata soggetta un'opera.

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+            <Tab text="Visualizzazione restauri" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.restorer.RestaurationVisualizationController">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="154.0" layoutY="99.0" rotate="90.0" text="Elenco restauri">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="restorationIdSearchText" layoutX="130.0" layoutY="492.0" promptText="CodiceRestauro" rotate="90.0" />
+                                          <Button fx:id="restorationIdSearch" layoutX="188.0" layoutY="627.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                                          <ScrollPane layoutX="-211.0" layoutY="266.0" prefHeight="180.0" prefWidth="624.0" rotate="90.0">
+                                             <content>
+                                                <TableView fx:id="restaurationsTable" editable="true" prefHeight="200.0" prefWidth="797.0" tableMenuButtonVisible="true">
+                                                   <columns>
+                                                      <TableColumn fx:id="restArtworkIdCol" prefWidth="133.0" text="CodiceRestauro" />
+                                                      <TableColumn fx:id="restIdCol" prefWidth="128.0" text="CodiceArchivio" />
+                                                      <TableColumn fx:id="restDescrCol" prefWidth="109.0" text="Descrizione" />
+                                                      <TableColumn fx:id="restBeginDateCol" minWidth="6.0" prefWidth="118.0" text="DataInizio" />
+                                                      <TableColumn fx:id="restEndDateCol" prefWidth="116.0" text="DataFine" />
+                                                   </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                          <ScrollPane layoutX="19.0" layoutY="267.0" prefHeight="180.0" prefWidth="624.0" rotate="90.0">
+                                             <content>
+                                                <TableView fx:id="restorersTable" editable="true" prefHeight="180.0" prefWidth="797.0" tableMenuButtonVisible="true">
+                                                   <columns>
+                                                      <TableColumn fx:id="restorersArtworkIdCol" prefWidth="133.0" text="CodiceRestauro" />
+                                                      <TableColumn fx:id="restorersIdCol" prefWidth="128.0" text="CodiceArchivio" />
+                                                      <TableColumn fx:id="restorersDescrCol" prefWidth="109.0" text="Descrizione" />
+                                                      <TableColumn fx:id="restorersBeginDateCol" minWidth="6.0" prefWidth="118.0" text="DataInizio" />
+                                                      <TableColumn fx:id="restorersEndDateCol" prefWidth="116.0" text="DataFine" />
+                                                   </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                          <Label layoutX="278.0" layoutY="202.0" rotate="90.0" text="Interventi effettuati da un restauratore">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="restorersIdSearchText" layoutX="361.0" layoutY="494.0" promptText="CodiceRestauratore" rotate="90.0" />
+                                          <Button fx:id="restorersIdSearch" layoutX="418.0" layoutY="628.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                                          <TextField fx:id="restorationArtworkIdSearchText" layoutX="130.0" layoutY="310.0" promptText="CodiceArchivio" rotate="90.0" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>

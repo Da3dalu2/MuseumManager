@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+<Tab closable="false" text="Amministrazione" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.administration.AdministrationController">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+             <children>
+                <Label layoutX="22.0" layoutY="33.0" text="Registrazione assunzioni/licenziamenti">
+                   <font>
+                      <Font name="System Bold" size="15.0" />
+                   </font>
+                </Label>
+                <Label layoutX="22.0" layoutY="210.0" text="Elenco dipendenti">
+                   <font>
+                      <Font name="System Bold" size="15.0" />
+                   </font>
+                </Label>
+                <Separator layoutX="-5.0" layoutY="157.0" prefHeight="53.0" prefWidth="758.0" />
+                <ScrollPane layoutX="22.0" layoutY="242.0">
+                   <content>
+                      <TableView fx:id="employeesTable" editable="true" prefHeight="200.0" prefWidth="704.0" tableMenuButtonVisible="true">
+                        <columns>
+                          <TableColumn fx:id="employeeIdCol" prefWidth="119.0" text="Identificativo" />
+                          <TableColumn fx:id="employeeNameCol" prefWidth="73.0" text="Nome" />
+                            <TableColumn fx:id="employeeSurnameCol" prefWidth="99.0" text="Cognome" />
+                            <TableColumn fx:id="employeePhoneCol" minWidth="6.0" prefWidth="105.0" text="Telefono" />
+                        </columns>
+                      </TableView>
+                   </content>
+                </ScrollPane>
+                <TextField fx:id="employeeIdSearchText" layoutX="475.0" layoutY="207.0" promptText="Identificativo" />
+                <Button fx:id="employeeIdSearch" layoutX="670.0" layoutY="207.0" mnemonicParsing="false" text="Cerca" />
+                <TextField fx:id="employeeId" layoutX="22.0" layoutY="75.0" promptText="Identificativo" />
+                <TextField fx:id="employeeName" layoutX="22.0" layoutY="131.0" promptText="Nome" />
+                <TextField fx:id="employeePhone" layoutX="278.0" layoutY="75.0" promptText="Telefono" />
+                <TextField fx:id="employeeSurname" layoutX="278.0" layoutY="131.0" promptText="Cognome" />
+                <Button fx:id="deleteEmployee" layoutX="624.0" layoutY="131.0" mnemonicParsing="false" text="Elimina" />
+                <Button fx:id="insertEmployee" layoutX="509.0" layoutY="131.0" mnemonicParsing="false" text="Inserisci" />
+                <ChoiceBox fx:id="employeeType" layoutX="509.0" layoutY="75.0" prefWidth="180.0" />
+                <Label layoutX="509.0" layoutY="51.0" text="Tipologia" />
+             </children></AnchorPane>
+      </content>
+</Tab>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+                            <Tab closable="false" text="Mostre" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.curator.ExpositionController">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListSelectionView fx:id="listSelectionExposition" layoutX="-72.0" layoutY="384.0" prefHeight="187.0" prefWidth="438.0" rotate="90.0" />
+                                          <ListView fx:id="collectionsList" layoutX="86.0" layoutY="-32.0" prefHeight="300.0" prefWidth="200.0" rotate="90.0" />
+                                          <Separator layoutX="215.0" layoutY="11.0" orientation="VERTICAL" prefHeight="458.0" prefWidth="37.0" rotate="90.0" />
+                                          <Label layoutX="287.0" layoutY="81.0" rotate="90.0" text="Collezioni esposte">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="223.0" layoutY="467.0" rotate="90.0" text="Inserimento o rimozione di collezioni in una mostra">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField fx:id="colsInExpoIdSearchText" layoutX="346.0" layoutY="119.0" prefHeight="26.0" prefWidth="175.0" promptText="CodiceMostra" rotate="90.0" />
+                                          <Button fx:id="colsInExpoIdSearch" layoutX="368.0" layoutY="177.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                                          <Button fx:id="updateExpositionComposition" layoutX="-61.0" layoutY="565.0" mnemonicParsing="false" rotate="90.0" text="Aggiorna composizione mostra" />
+                                          <TextField fx:id="expoToUpdateIdSearchText" layoutX="-39.0" layoutY="343.0" prefHeight="26.0" prefWidth="175.0" promptText="CodiceMostra" rotate="90.0" />
+                                          <TextField fx:id="expositionCreationId" layoutX="316.0" layoutY="356.0" prefHeight="26.0" prefWidth="175.0" promptText="CodiceMostra" rotate="90.0" />
+                                          <DatePicker fx:id="expositionBeginDate" layoutX="212.0" layoutY="355.0" prefHeight="26.0" prefWidth="175.0" promptText="DataInizio" rotate="90.0" />
+                                          <DatePicker fx:id="expositionEndDate" layoutX="178.0" layoutY="355.0" prefHeight="26.0" prefWidth="175.0" promptText="DataFine" rotate="90.0" />
+                                          <TextArea fx:id="expositionDescription" layoutX="280.0" layoutY="535.0" prefHeight="102.0" prefWidth="171.0" promptText="Descrizione" rotate="90.0" />
+                                          <TextField fx:id="expositionName" layoutX="281.0" layoutY="355.0" prefHeight="26.0" prefWidth="175.0" promptText="Denominazione" rotate="90.0" />
+                                          <TextField fx:id="expositionCuratorId" layoutX="247.0" layoutY="355.0" prefHeight="26.0" prefWidth="175.0" promptText="CodiceCuratore" rotate="90.0" />
+                                          <Button fx:id="insertExposition" layoutX="231.0" layoutY="519.0" mnemonicParsing="false" rotate="90.0" text="Inserisci" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>

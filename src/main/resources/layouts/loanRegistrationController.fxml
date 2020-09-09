@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+<Tab closable="false" text="Registrazione prestiti" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.registrar.LoanRegistrationController">
+	<content>
+	  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="717.0" prefWidth="500.0">
+	       <children>
+		  <Separator layoutX="230.0" layoutY="159.0" orientation="VERTICAL" prefHeight="481.0" prefWidth="19.0" rotate="90.0" />
+		  <Label layoutX="289.0" layoutY="179.0" rotate="90.0" text="Registrazione richieste di prestito">
+		     <font>
+			<Font name="System Bold" size="15.0" />
+		     </font>
+		  </Label>
+		  <Label layoutX="343.0" layoutY="549.0" rotate="90.0" text="Registrazione prestiti">
+		     <font>
+			<Font name="System Bold" size="15.0" />
+		     </font>
+		  </Label>
+		  <ChoiceBox fx:id="lenderIstitutions" layoutX="238.0" layoutY="204.0" prefWidth="250.0" rotate="90.0" />
+		  <ChoiceBox fx:id="applicantInstitutions" layoutX="162.0" layoutY="205.0" prefWidth="250.0" rotate="90.0" />
+		  <Label layoutX="348.0" layoutY="88.0" rotate="90.0" text="Ente prestatore" />
+		  <Label layoutX="266.0" layoutY="91.0" rotate="90.0" text="Ente richiedente" />
+		  <TextArea fx:id="loanRequestMotivation" layoutX="-53.0" layoutY="149.0" prefHeight="90.0" prefWidth="300.0" promptText="Motivazione (250 caratteri)" rotate="90.0" />
+		  <TextField fx:id="artworkIdLoan" layoutX="91.0" layoutY="245.0" promptText="CodiceArchivio" rotate="90.0" />
+		  <TextField fx:id="registrarId" layoutX="133.0" layoutY="245.0" promptText="CodiceRegistrar" rotate="90.0" />
+		  <Label layoutX="191.0" layoutY="66.0" rotate="90.0" text="Registrar" />
+		  <Label layoutX="155.0" layoutY="59.0" rotate="90.0" text="Opera" />
+		  <Button fx:id="insertLoanRequest" layoutX="-9.0" layoutY="205.0" mnemonicParsing="false" rotate="90.0" text="Inserisci" />
+		  <Button fx:id="deleteLoanRequest" layoutX="-6.0" layoutY="298.0" mnemonicParsing="false" rotate="90.0" text="Elimina" />
+		  <TextField fx:id="acceptedApplicationId" layoutX="256.0" layoutY="543.0" promptText="CodiceRichiesta" rotate="90.0" />
+		  <Label layoutX="311.0" layoutY="524.0" rotate="90.0" text="Richiesta accettata" />
+		  <Label layoutX="213.0" layoutY="544.0" rotate="90.0" text="Durata della concessione" />
+		  <Button fx:id="insertLoan" layoutX="123.0" layoutY="491.0" mnemonicParsing="false" rotate="90.0" text="Inserisci" />
+		  <Button fx:id="deleteLoan" layoutX="126.0" layoutY="596.0" mnemonicParsing="false" rotate="90.0" text="Elimina" />
+		  <DatePicker fx:id="loanBeginDate" layoutX="174.0" layoutY="542.0" prefHeight="26.0" prefWidth="171.0" promptText="DataInizio" rotate="90.0" />
+		  <DatePicker fx:id="loanEndDate" layoutX="136.0" layoutY="542.0" prefHeight="26.0" prefWidth="171.0" promptText="DataFine" rotate="90.0" />
+	       </children>
+	    </AnchorPane>
+	</content>
+</Tab>

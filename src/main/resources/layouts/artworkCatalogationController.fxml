@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+<Tab closable="false" text="Catalogazione opera" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.archivist.ArtworkCatalogationController">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="artworkId" layoutX="264.0" layoutY="112.0" promptText="CodiceArchivio" rotate="90.0" />
+                  <TextField fx:id="artworkChronologyId" layoutX="158.0" layoutY="112.0" promptText="IdCronologia" rotate="90.0" />
+                  <TextField fx:id="artworkMaterial" layoutX="212.0" layoutY="112.0" promptText="Materia" rotate="90.0" />
+                  <TextField fx:id="artworkArchivistId" layoutX="98.0" layoutY="218.0" promptText="CodiceArchivista" rotate="90.0" />
+                  <TextField fx:id="conservationState" layoutX="264.0" layoutY="329.0" promptText="StatoConservazione" rotate="90.0" />
+                  <TextField fx:id="artworkHeight" layoutX="284.0" layoutY="518.0" prefWidth="131.0" promptText="Altezza" rotate="90.0" />
+                  <TextField fx:id="artworkExcavationId" layoutX="158.0" layoutY="329.0" promptText="CodiceScavo" rotate="90.0" />
+                  <TextField fx:id="artworkTechnique" layoutX="212.0" layoutY="329.0" promptText="Tecnica" rotate="90.0" />
+                  <TextField fx:id="artworkUnit" layoutX="321.0" layoutY="618.0" prefHeight="26.0" prefWidth="57.0" promptText="Unità" rotate="90.0" />
+                  <Label layoutX="316.0" layoutY="119.0" rotate="90.0" text="Inserimento di un'opera">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="insertArtwork" layoutX="146.0" layoutY="487.0" mnemonicParsing="false" rotate="90.0" text="Inserisci" />
+                  <TextArea fx:id="artworkDefinition" layoutX="-44.0" layoutY="187.0" prefHeight="93.0" prefWidth="270.0" promptText="Definizione (250 caratteri)" rotate="90.0" />
+                  <TextField fx:id="artworkWidth" layoutX="248.0" layoutY="518.0" prefWidth="131.0" promptText="Larghezza" rotate="90.0" />
+                  <TextField fx:id="artworkDepth" layoutX="197.0" layoutY="533.0" prefWidth="161.0" promptText="Profondità (opzionale)" rotate="90.0" />
+               </children></AnchorPane>
+        </content>
+</Tab>

@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="750.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Registrar">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="750.0">
+                     <children>
+                        <TabPane layoutX="125.0" layoutY="-158.0" prefHeight="750.0" prefWidth="500.0" rotate="270.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab text="Registrazione prestiti">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="717.0" prefWidth="500.0">
+                                       <children>
+                                          <Separator layoutX="230.0" layoutY="159.0" orientation="VERTICAL" prefHeight="481.0" prefWidth="19.0" rotate="90.0" />
+                                          <Label layoutX="289.0" layoutY="179.0" rotate="90.0" text="Registrazione richieste di prestito">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="343.0" layoutY="549.0" rotate="90.0" text="Registrazione prestiti">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <ChoiceBox layoutX="238.0" layoutY="204.0" prefWidth="250.0" rotate="90.0" />
+                                          <ChoiceBox layoutX="162.0" layoutY="205.0" prefWidth="250.0" rotate="90.0" />
+                                          <Label layoutX="348.0" layoutY="88.0" rotate="90.0" text="Ente prestatore" />
+                                          <Label layoutX="266.0" layoutY="91.0" rotate="90.0" text="Ente richiedente" />
+                                          <TextArea layoutX="-53.0" layoutY="149.0" prefHeight="90.0" prefWidth="300.0" promptText="Motivazione (250 caratteri)" rotate="90.0" />
+                                          <TextField layoutX="91.0" layoutY="245.0" promptText="CodiceArchivio" rotate="90.0" />
+                                          <TextField layoutX="133.0" layoutY="245.0" promptText="CodiceRegistrar" rotate="90.0" />
+                                          <Label layoutX="191.0" layoutY="66.0" rotate="90.0" text="Registrar" />
+                                          <Label layoutX="155.0" layoutY="59.0" rotate="90.0" text="Opera" />
+                                          <Button layoutX="-9.0" layoutY="295.0" mnemonicParsing="false" rotate="90.0" text="Inserisci" />
+                                          <Button layoutX="-6.0" layoutY="204.0" mnemonicParsing="false" rotate="90.0" text="Elimina" />
+                                          <TextField layoutX="256.0" layoutY="543.0" promptText="CodiceRichiesta" rotate="90.0" />
+                                          <TextField layoutX="176.0" layoutY="543.0" promptText="DataInizio" rotate="90.0" />
+                                          <TextField layoutX="136.0" layoutY="543.0" promptText="DataFine" rotate="90.0" />
+                                          <Label layoutX="311.0" layoutY="524.0" rotate="90.0" text="Richiesta accettata" />
+                                          <Label layoutX="213.0" layoutY="544.0" rotate="90.0" text="Durata della concessione" />
+                                          <Button layoutX="123.0" layoutY="585.0" mnemonicParsing="false" rotate="90.0" text="Inserisci" />
+                                          <Button layoutX="126.0" layoutY="494.0" mnemonicParsing="false" rotate="90.0" text="Elimina" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab text="Visualizzazione prestiti">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="717.0" prefWidth="500.0">
+                                       <children>
+                                          <ScrollPane layoutX="20.0" layoutY="261.0" prefHeight="180.0" prefWidth="614.0" rotate="90.0">
+                                             <content>
+                                                <TableView editable="true" prefHeight="180.0" prefWidth="614.0" tableMenuButtonVisible="true">
+                                                  <columns>
+                                                    <TableColumn prefWidth="75.0" text="C1" />
+                                                    <TableColumn prefWidth="75.0" text="C2" />
+                                                  </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                          <ScrollPane layoutX="-206.0" layoutY="261.0" prefHeight="180.0" prefWidth="614.0" rotate="90.0">
+                                             <content>
+                                                <TableView editable="true" prefHeight="180.0" prefWidth="614.0" tableMenuButtonVisible="true">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="C1" />
+                                                      <TableColumn prefWidth="75.0" text="C2" />
+                                                   </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                          <TextField layoutX="356.0" layoutY="490.0" promptText="CodiceRichiesta" rotate="90.0" />
+                                          <TextField layoutX="129.0" layoutY="490.0" promptText="CodicePrestito" rotate="90.0" />
+                                          <Button layoutX="414.0" layoutY="614.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                                          <Button layoutX="186.0" layoutY="614.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                                          <Label layoutX="355.0" layoutY="124.0" rotate="90.0" text="Richieste di prestito">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="180.0" layoutY="70.0" rotate="90.0" text="Prestiti">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                           </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Archivista">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="142.0" layoutY="-141.0" prefHeight="750.0" prefWidth="467.0" rotate="270.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                              <Tab text="Inserimento scavo">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="Catalogazione opera">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                              <Tab text="Inserimento cronologia">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Curatore">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="142.0" layoutY="-141.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="467.0" rotate="270.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Mostre">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListSelectionView layoutX="-72.0" layoutY="384.0" prefHeight="187.0" prefWidth="438.0" rotate="90.0" />
+                                          <ListView layoutX="86.0" layoutY="-32.0" prefHeight="300.0" prefWidth="200.0" rotate="90.0" />
+                                          <Separator layoutX="215.0" layoutY="11.0" orientation="VERTICAL" prefHeight="458.0" prefWidth="37.0" rotate="90.0" />
+                                          <Label layoutX="287.0" layoutY="81.0" rotate="90.0" text="Collezioni esposte">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="223.0" layoutY="467.0" rotate="90.0" text="Inserimento o rimozione di collezioni in una mostra">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <TextField layoutX="346.0" layoutY="119.0" prefHeight="26.0" prefWidth="175.0" promptText="CodiceMostra" rotate="90.0" />
+                                          <Button layoutX="368.0" layoutY="177.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                                          <Button layoutX="-61.0" layoutY="565.0" mnemonicParsing="false" rotate="90.0" text="Aggiorna composizione mostra" />
+                                          <TextField layoutX="-39.0" layoutY="343.0" prefHeight="26.0" prefWidth="175.0" promptText="CodiceMostra" rotate="90.0" />
+                                          <TextField layoutX="316.0" layoutY="356.0" prefHeight="26.0" prefWidth="175.0" promptText="CodiceMostra" rotate="90.0" />
+                                          <DatePicker layoutX="212.0" layoutY="355.0" prefHeight="26.0" prefWidth="175.0" promptText="DataInizio" rotate="90.0" />
+                                          <DatePicker layoutX="178.0" layoutY="355.0" prefHeight="26.0" prefWidth="175.0" promptText="DataFine" rotate="90.0" />
+                                          <TextArea layoutX="280.0" layoutY="535.0" prefHeight="102.0" prefWidth="171.0" promptText="Descrizione" rotate="90.0" />
+                                          <TextField layoutX="281.0" layoutY="355.0" prefHeight="26.0" prefWidth="175.0" promptText="Denominazione" rotate="90.0" />
+                                          <TextField layoutX="247.0" layoutY="355.0" prefHeight="26.0" prefWidth="175.0" promptText="CodiceCuratore" rotate="90.0" />
+                                          <Button layoutX="231.0" layoutY="519.0" mnemonicParsing="false" rotate="90.0" text="Inserisci" />
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                            </Tab>
+                            <Tab text="Collezioni">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ListSelectionView layoutX="-43.0" layoutY="109.0" orientation="VERTICAL" prefHeight="389.0" prefWidth="523.0" rotate="90.0" />
+                                          <Label layoutX="214.0" layoutY="262.0" rotate="90.0" text="Inserimento o rimozione di opere in una collezione">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Catalogo collezione">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="269.0" layoutY="193.0" rotate="90.0" text="Opere appartenenti ad una collezione">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <ScrollPane layoutX="-104.0" layoutY="176.0" prefHeight="363.0" prefWidth="630.0" rotate="90.0">
+                                             <content>
+                                                <TableView editable="true" prefHeight="362.0" prefWidth="633.0" tableMenuButtonVisible="true">
+                                                   <columns>
+                                                      <TableColumn prefWidth="138.0" text="CodiceArchivio" />
+                                                      <TableColumn prefWidth="108.0" text="Definizione" />
+                                                      <TableColumn prefWidth="75.0" text="Column X" />
+                                                   </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                          <TextField layoutX="341.0" layoutY="510.0" promptText="CodiceCollezione" rotate="90.0" />
+                                          <Button layoutX="398.0" layoutY="630.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab text="Catalogo mostra">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TextField layoutX="341.0" layoutY="510.0" promptText="CodiceMostra" rotate="90.0" />
+                                          <ScrollPane layoutX="-104.0" layoutY="176.0" prefHeight="363.0" prefWidth="630.0" rotate="90.0">
+                                             <content>
+                                                <TableView editable="true" prefHeight="362.0" prefWidth="633.0" tableMenuButtonVisible="true">
+                                                  <columns>
+                                                    <TableColumn prefWidth="138.0" text="CodiceArchivio" />
+                                                    <TableColumn prefWidth="108.0" text="Definizione" />
+                                                      <TableColumn prefWidth="75.0" text="Column X" />
+                                                  </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                          <Label layoutX="306.0" layoutY="156.0" rotate="90.0" text="Opere esposte in una mostra">
+                                             <font>
+                                                <Font name="System Bold" size="15.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="398.0" layoutY="630.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Restauratore">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="22.0" layoutY="210.0" text="Elenco restauri">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TableView editable="true" layoutX="22.0" layoutY="242.0" prefHeight="200.0" prefWidth="704.0" tableMenuButtonVisible="true">
+                           <columns>
+                              <TableColumn prefWidth="133.0" text="CodiceRestauro" />
+                              <TableColumn prefWidth="128.0" text="CodiceArchivio" />
+                              <TableColumn prefWidth="162.0" text="Descrizione" />
+                              <TableColumn minWidth="6.0" prefWidth="135.0" text="DataInizio" />
+                              <TableColumn prefWidth="132.0" text="DataFine" />
+                           </columns>
+                        </TableView>
+                        <TextField layoutX="475.0" layoutY="207.0" promptText="CodiceRestauro" />
+                        <Button layoutX="670.0" layoutY="207.0" mnemonicParsing="false" text="Cerca" />
+                        <Separator layoutY="157.0" prefHeight="53.0" prefWidth="758.0" />
+                        <TextArea layoutX="349.0" layoutY="61.0" prefHeight="105.0" prefWidth="279.0" promptText="Descrizione (250 caratteri)" />
+                        <Button layoutX="652.0" layoutY="61.0" mnemonicParsing="false" text="Inserisci" />
+                        <Button layoutX="652.0" layoutY="103.0" mnemonicParsing="false" text="Rimuovi" />
+                        <Label layoutX="22.0" layoutY="22.0" text="Registrazione interventi di restauro">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="152.0" layoutY="61.0" promptText="CodiceRestauro" />
+                        <TextField layoutX="152.0" layoutY="101.0" promptText="CodiceArchivio" />
+                        <TextField layoutX="152.0" layoutY="140.0" promptText="DataInizio" />
+                        <RadioButton layoutX="216.0" layoutY="211.0" mnemonicParsing="false" text="Mostra responsabili di un restauro" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Amministrazione">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="22.0" layoutY="33.0" text="Registrazione assunzioni/licenziamenti">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="22.0" layoutY="210.0" text="Elenco dipendenti">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="-5.0" layoutY="157.0" prefHeight="53.0" prefWidth="758.0" />
+                        <TableView editable="true" layoutX="22.0" layoutY="242.0" prefHeight="200.0" prefWidth="704.0" tableMenuButtonVisible="true">
+                          <columns>
+                            <TableColumn prefWidth="119.0" text="Identificativo" />
+                            <TableColumn prefWidth="73.0" text="Nome" />
+                              <TableColumn prefWidth="99.0" text="Cognome" />
+                              <TableColumn minWidth="6.0" prefWidth="105.0" text="Telefono" />
+                          </columns>
+                        </TableView>
+                        <TextField layoutX="475.0" layoutY="207.0" promptText="Identificativo" />
+                        <Button layoutX="670.0" layoutY="207.0" mnemonicParsing="false" text="Cerca" />
+                        <TextField layoutX="22.0" layoutY="75.0" promptText="Identificativo" />
+                        <TextField layoutX="22.0" layoutY="131.0" promptText="Nome" />
+                        <TextField layoutX="278.0" layoutY="75.0" promptText="Telefono" />
+                        <TextField layoutX="278.0" layoutY="131.0" promptText="Cognome" />
+                        <Button layoutX="614.0" layoutY="131.0" mnemonicParsing="false" text="Inserisci" />
+                        <Button layoutX="511.0" layoutY="131.0" mnemonicParsing="false" text="Rimuovi" />
+                        <ChoiceBox layoutX="509.0" layoutY="75.0" prefWidth="180.0" />
+                        <Label layoutX="509.0" layoutY="51.0" text="Tipologia" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Catalogo">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="141.0" layoutY="-142.0" prefHeight="750.0" prefWidth="469.0" rotate="270.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab text="Mostre">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="717.0" prefWidth="469.0">
+                                       <children>
+                                          <ScrollPane layoutX="-134.0" layoutY="164.0" prefHeight="390.0" prefWidth="686.0" rotate="90.0">
+                                             <content>
+                                                <TableView editable="true" prefHeight="390.0" prefWidth="686.0" tableMenuButtonVisible="true">
+                                                  <columns>
+                                                    <TableColumn prefWidth="133.0" text="CodiceMostra" />
+                                                    <TableColumn prefWidth="166.0" text="Denominazione" />
+                                                      <TableColumn minWidth="0.0" prefWidth="136.0" text="Descrizione" />
+                                                      <TableColumn prefWidth="119.0" text="DataInizio" />
+                                                      <TableColumn minWidth="0.0" prefWidth="131.0" text="DataFine" />
+                                                  </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Collezioni">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="717.0" prefWidth="469.0">
+                                       <children>
+                                          <ScrollPane layoutX="-130.0" layoutY="163.0" prefHeight="390.0" prefWidth="686.0" rotate="90.0">
+                                             <content>
+                                                <TableView editable="true" prefHeight="390.0" prefWidth="686.0" tableMenuButtonVisible="true">
+                                                   <columns>
+                                                      <TableColumn prefWidth="150.0" text="CodiceCollezione" />
+                                                      <TableColumn minWidth="0.0" prefWidth="156.0" text="Denominazione" />
+                                                      <TableColumn prefWidth="113.0" text="Descrizione" />
+                                                      <TableColumn prefWidth="112.0" text="Dimensione" />
+                                                      <TableColumn prefWidth="145.0" text="CodiceCuratore" />
+                                                   </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Opere">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <ScrollPane layoutX="-127.0" layoutY="163.0" prefHeight="390.0" prefWidth="686.0" rotate="90.0">
+                                             <content>
+                                                <TableView prefHeight="390.0" prefWidth="686.0">
+                                                  <columns>
+                                                    <TableColumn prefWidth="75.0" text="C1" />
+                                                    <TableColumn prefWidth="75.0" text="C2" />
+                                                  </columns>
+                                                </TableView>
+                                             </content>
+                                          </ScrollPane>
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+<Tab closable="false" text="Scavi" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.controllers.archive.ExcavationArchiveController">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ScrollPane layoutX="-89.0" layoutY="174.0" rotate="90.0">
+                     <content>
+                        <TableView fx:id="excavationsTable" editable="true" prefHeight="373.0" prefWidth="604.0" tableMenuButtonVisible="true">
+                           <columns>
+                              <TableColumn fx:id="excIdCol" prefWidth="114.0" text="CodiceScavo" />
+                              <TableColumn fx:id="excNameCol" prefWidth="151.0" text="Denominazione" />
+                              <TableColumn fx:id="excYearRetrivalCol" prefWidth="149.0" text="AnnoReperimento" />
+                              <TableColumn fx:id="excPlaceRetrivalCol" prefWidth="176.0" text="LuogoReperimento" />
+                           </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+                  <TextField fx:id="excavationIdSearchText" layoutX="348.0" layoutY="475.0" promptText="CodiceScavo" rotate="90.0" />
+                  <Button fx:id="excavationIdSearch" layoutX="406.0" layoutY="622.0" mnemonicParsing="false" rotate="90.0" text="Cerca" />
+                  <Label layoutX="352.0" layoutY="129.0" rotate="90.0" text="Elenco siti di scavo">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+        </content>
+</Tab>
